@@ -25,7 +25,6 @@ h3 {
 
 .sectionheader {
     background: #669999;
-    border-bottom: 6px solid #000;
     height: 60px;
     color: white;
     display: inline-block;
@@ -65,6 +64,7 @@ vertical-align: top;
 .item .itemtext {
     text-align: center;
     padding: 5px;
+    padding-bottom: 15px;
     border: solid 2px #669999;
 
 }
@@ -178,6 +178,7 @@ background-size: cover;
 
 }
 
+
 .item:hover .btnDetails {
     color: white;
     border: 1px solid white;
@@ -208,6 +209,23 @@ rgba(0,0,0,.7)
     font-family: cursive;
     
 }
+#bottomparallax-blog {
+    background: linear-gradient( 
+rgba(0,0,0,.7),
+rgba(0,0,0,.7)
+
+
+    ), url('../img/viking.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.bottom_parallax{
+    margin-top: 150px;
+}
 
 .carousel-inner {
     grid-row: 1;
@@ -224,6 +242,7 @@ rgba(0,0,0,.7)
 }
 
 footer {
+    margin-top: 100px;
     background: #669999 ;
 }
 
@@ -279,3 +298,51 @@ footer p {
 .Sociallinks li {
     display: inline-block;
 }
+
+
+
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.box h3{
+    text-align:center;
+    position:relative;
+    top:80px;
+  }
+  .box {
+    height:100px;
+    margin:40px auto;
+  }
